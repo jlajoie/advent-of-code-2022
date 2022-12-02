@@ -1,10 +1,10 @@
-const fs = require("fs");
+const fs = require('fs');
 
 let input = fs
   .readFileSync(`${__dirname}/input.txt`)
   .toString()
-  .split("\n\n")
-  .map((chunk) => chunk.split("\n").map((line) => parseInt(line)));
+  .split('\n\n')
+  .map((chunk) => chunk.split('\n').map((line) => parseInt(line)));
 
 // Part One
 let partOneOutput = Math.max(
